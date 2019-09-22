@@ -42,6 +42,11 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
     
+    public function showRegistrationForm()
+    {
+        return view('register');
+    }
+    
     /**
      * Handle a registration request for the application.
      *
